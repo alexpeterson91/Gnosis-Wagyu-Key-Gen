@@ -64,8 +64,7 @@ const Wizard: FC<WizardProps> = (props): ReactElement => {
   const [numberOfKeys, setNumberOfKeys] = useState(1);
   const [withdrawalAddress, setWithdrawalAddress] = useState("");
   const [password, setPassword] = useState("");
-  const [folderPath, setFolderPath] = useState("");
-  const [showAdvanced, setShowAdvanced] = useState(false);
+  const [folderPath, setFolderPath] = useState(""); 
   
   
   const [showAdvanced, setShowAdvanced] = () => {
