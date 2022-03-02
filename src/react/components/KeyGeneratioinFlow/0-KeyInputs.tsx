@@ -2,7 +2,7 @@ import { Button, Fade, FormControlLabel, Grid, Switch, TextField, Tooltip, Typog
 import React, { Dispatch, SetStateAction, useState } from 'react';
 import styled from "styled-components";
 import { errors, tooltips } from '../../constants';
-import { Network } from '../../types';
+
 
 type GenerateKeysProps = {
   numberOfKeys: number,
@@ -19,8 +19,6 @@ type GenerateKeysProps = {
   numberOfKeysError: boolean,
   passwordStrengthError: boolean,
   startingIndexError: boolean,
-  network: string,
-  setNetwork: Dispatch<SetStateAction<string>>
   showAdvanced: boolean,
   setShowAdvanced: Dispatch<SetStateAction<boolean>>,
   onFinish: () => void
@@ -52,20 +50,8 @@ const KeyInputs = (props: GenerateKeysProps) => {
       props.setWithdrawalAddressFormatError(false);
     }
   }
-   /**
-   *testing for default advanced on 
-   *
-   */
-  const showAdvanced = () => {
-    props.setShowAdvanced(!props.showAdvanced);
-    if (Network == "GNOSIS") {
-      props.showAdvanced(true);
-    } else {
-      props.showAdvanced(false);
-    }
-  }
-    
-    
+
+  
   const updateNumberOfKeys = (e: React.ChangeEvent<HTMLInputElement>) => {
     const num = parseInt(e.target.value);
     props.setNumberOfKeys(num);
