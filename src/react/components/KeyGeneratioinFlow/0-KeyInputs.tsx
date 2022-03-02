@@ -2,7 +2,7 @@ import { Button, Fade, FormControlLabel, Grid, Switch, TextField, Tooltip, Typog
 import React, { Dispatch, SetStateAction, useState } from 'react';
 import styled from "styled-components";
 import { errors, tooltips } from '../../constants';
-import Network from '../../types';
+import { Network } from '../../types';
 
 type GenerateKeysProps = {
   numberOfKeys: number,
@@ -58,7 +58,7 @@ const KeyInputs = (props: GenerateKeysProps) => {
    */
   const showAdvanced = () => {
     props.setShowAdvanced(!props.showAdvanced);
-    if (Network == "Gnosis") {
+    if (Network == "GNOSIS") {
       props.showAdvanced(true);
     } else {
       props.showAdvanced(false);
@@ -143,7 +143,7 @@ const KeyInputs = (props: GenerateKeysProps) => {
       <Grid item>
         <FormControlLabel
           control={<Switch checked={props.showAdvanced} onChange={handleToggleShowAdvanced} color="default" size="small" />}
-          label="Use Advanced Inputs"
+          label="Use Advanced Inputs (Needed for Gnosis)"
         />
       </Grid>
       <Grid item>
@@ -153,7 +153,7 @@ const KeyInputs = (props: GenerateKeysProps) => {
                 <Tooltip title={tooltips.ETH1_WITHDRAW_ADDRESS}>
                   <AddressTextField
                     id="eth1-withdraw-address"
-                    label="Ethereum Withdrawal Address (Optional)"
+                    label="Ethereum Withdrawal Address (Optional) Needed for Gnosis"
                     variant="outlined"
                     value={props.withdrawalAddress}
                     onChange={updateEth1WithdrawAddress}
