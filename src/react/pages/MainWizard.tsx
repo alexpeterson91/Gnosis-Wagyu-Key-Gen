@@ -68,7 +68,7 @@ const Wizard: FC<WizardProps> = (props): ReactElement => {
   
   
   const [showAdvanced, setShowAdvanced] = () => {
-    if (Network == "GNOSIS") {
+    if (Network == Network.GNOSIS) {
       useState(true);
     } else {
       useState(false);
