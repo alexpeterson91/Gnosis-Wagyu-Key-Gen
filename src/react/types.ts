@@ -12,7 +12,7 @@ export enum StepSequenceKey {
 }
 
 export enum Network {
-  ETH2MAINNET = "ETH2-Mainnet",
+  MAINNET = "ETH2-Mainnet",
   GNOSIS = "Gnosis",
-  GNOTest = "Gnosis Testnet"
+  GNOSIS_TESTNET = "Gnosis Testnet"
 }
