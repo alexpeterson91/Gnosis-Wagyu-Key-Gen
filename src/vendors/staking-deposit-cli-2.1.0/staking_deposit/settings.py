@@ -10,11 +10,11 @@ class BaseChainSetting(NamedTuple):
     GENESIS_FORK_VERSION: bytes
 
 
-MAINNET = 'mainnet'
+ETH2Mainet = 'mainnet'
 GNOSIS = 'gnosis'
-PRATER = 'prater'
-KINTSUGI = 'kintsugi'
-KILN = 'kiln'
+#PRATER = 'prater'
+#KINTSUGI = 'kintsugi'
+#KILN = 'kiln'
 GNOSIS_TESTNET = 'gnosis-testnet'
 #TEST = 'test'
 
@@ -37,15 +37,15 @@ GnosisTestnetSetting = BaseChainSetting(NETWORK_NAME=GNOSIS_TESTNET, GENESIS_FOR
 
 
 ALL_CHAINS: Dict[str, BaseChainSetting] = {
-    MAINNET: MainnetSetting,
-    PRATER: PraterSetting,
-    KINTSUGI: KintsugiSetting,
-    KILN: KilnSetting,
+    ETH2Mainnet: MainnetSetting,
+    #PRATER: PraterSetting,
+    #KINTSUGI: KintsugiSetting,
+    #KILN: KilnSetting,
     GNOSIS_TESTNET: GnosisTestnetSetting,
     GNOSIS: GnosisSetting,
     #TEST: TestSetting,
 }
 
 
-def get_chain_setting(chain_name: str = MAINNET) -> BaseChainSetting:
+def get_chain_setting(chain_name: str = GNOSIS) -> BaseChainSetting:
     return ALL_CHAINS[chain_name]
