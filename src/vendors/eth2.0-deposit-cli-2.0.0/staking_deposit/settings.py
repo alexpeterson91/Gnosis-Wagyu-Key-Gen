@@ -10,7 +10,7 @@ class BaseChainSetting(NamedTuple):
     GENESIS_FORK_VERSION: bytes
 
 
-MAINNET = 'ETH2 mainnet'
+MAINNET = 'mainnet'
 GNOSIS = 'gnosis'
 PRATER = 'prater'
 KINTSUGI = 'kintsugi'
