@@ -10,11 +10,11 @@ class BaseChainSetting(NamedTuple):
     GENESIS_FORK_VERSION: bytes
 
 
-ETH2Mainet = 'mainnet'
+MAINNET = 'ETH2 mainnet'
 GNOSIS = 'gnosis'
-#PRATER = 'prater'
-#KINTSUGI = 'kintsugi'
-#KILN = 'kiln'
+PRATER = 'prater'
+KINTSUGI = 'kintsugi'
+KILN = 'kiln'
 GNOSIS_TESTNET = 'gnosis-testnet'
 #TEST = 'test'
 
@@ -37,7 +37,7 @@ GnosisTestnetSetting = BaseChainSetting(NETWORK_NAME=GNOSIS_TESTNET, GENESIS_FOR
 
 
 ALL_CHAINS: Dict[str, BaseChainSetting] = {
-    ETH2Mainnet: MainnetSetting,
+    MAINNET: MainnetSetting,
     #PRATER: PraterSetting,
     #KINTSUGI: KintsugiSetting,
     #KILN: KilnSetting,
