@@ -12,9 +12,7 @@ export enum StepSequenceKey {
 }
 
 export enum Network {
-  MAINNET = "Mainnet",
-  PRATER = "Prater",
-  KINTSUGI = "Kintsugi",
-  KILN = "Kiln",
-  GNOSIS = "Gnosis"
+  ETH2MAINNET = "ETH2-Mainnet",
+  GNOSIS = "Gnosis",
+  GNOTest = "Gnosis Testnet"
 }
