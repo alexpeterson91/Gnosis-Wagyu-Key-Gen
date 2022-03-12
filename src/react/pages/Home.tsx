@@ -129,26 +129,29 @@ const Home: FC<HomeProps> = (props): ReactElement => {
         </div>
       </Modal>
 
-      <LandingHeader variant="h1">Welcome!</LandingHeader>
+      <LandingHeader variant="h1">Welcome! <b>THIS IS EXPERIMENTAL SOFTWARE NOT INTENDED FOR PRODUCTION USE AT THIS TIME</b></LandingHeader>
       <KeyIcon />
       <SubHeader>Your key generator for Ethereum 2.0 & Gnosis Beacon Chain</SubHeader>
 
       <Links>
-        <InfoLabel>Github:</InfoLabel> https://github.com/stake-house/wagyu-key-gen
+        <InfoLabel>Github:</InfoLabel> https://github.com/alexpeterson91/wagyu-key-gen/issues
         <br />
-        <InfoLabel>Support:</InfoLabel> https://discord.io/ethstaker
+        <InfoLabel>Support:</InfoLabel> https://discord.io/dappnode
+        <br />
+        <InfoLabel>Powered by Stake-House:</InfoLabel> https://github.com/stake-house/wagyu-key-gen
+
       </Links>
 
       <OptionsGrid container spacing={2} direction="column">
         <Grid item>
           <Button variant="contained" color="primary" onClick={handleCreateNewMnemonic} tabIndex={tabIndex(1)}>
-            Create New Secret Recovery Phrase
+            Create New Mnemonic Recovery Phrase
           </Button>
         </Grid>
         <Grid item>
           <Tooltip title={tooltips.IMPORT_MNEMONIC}>
             <Button style={{color: "gray"}} size="small" onClick={handleUseExistingMnemonic} tabIndex={tabIndex(1)}>
-              Use Existing Secret Recovery Phrase
+              Use Existing Mnemonic Recovery Phrase
             </Button>
           </Tooltip>
         </Grid>
