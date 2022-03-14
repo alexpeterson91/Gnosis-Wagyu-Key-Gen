@@ -31,7 +31,7 @@ const StyledTextField = styled(TextField)`
 
 const AddressTextField = styled(TextField)`
   margin: 12px 0;
-  width: 440px;
+  width: 480px;
 `
 
 /**
