@@ -27,7 +27,7 @@ const VersionFooter = () => {
     <Container>
       <Grid container direction="column">
         <Grid item xs={12}>
-          <SoftText>Version: {VERSION} - Commit Hash: {COMMITHASH}</SoftText>
+          <SoftText>Version: {VERSION} -TESTING ONLY!- Commit Hash: {COMMITHASH}</SoftText>
         </Grid>
       </Grid>
     </Container>
