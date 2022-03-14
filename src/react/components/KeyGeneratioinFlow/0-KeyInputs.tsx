@@ -124,13 +124,6 @@ const KeyInputs = (props: GenerateKeysProps) => {
         </Grid>
       </Grid>
       <Grid item>
-        <FormControlLabel
-          control={<Switch checked={props.showAdvanced} onChange={handleToggleShowAdvanced} color="default" size="small" />}
-          label="Use Advanced Inputs (Required for Gnosis)"
-        />
-      </Grid>
-      <Grid item>
-          <Fade in={props.showAdvanced} >
             <Grid container item direction="row" justifyContent="center" alignItems="center" spacing={2} xs={12}>
               <Grid item>
                 <Tooltip title={tooltips.ETH1_WITHDRAW_ADDRESS}>
@@ -149,7 +142,6 @@ const KeyInputs = (props: GenerateKeysProps) => {
                 </Typography>
               </Grid>
             </Grid>
-          </Fade>
         </Grid>
     </Grid>
   );
