@@ -129,7 +129,7 @@ const KeyInputs = (props: GenerateKeysProps) => {
                 <Tooltip title={tooltips.ETH1_WITHDRAW_ADDRESS}>
                   <AddressTextField
                     id="eth1-withdraw-address"
-                    label="ETH Withdrawal Address (Required for Batch Key Generation)"
+                    label="ETH1 Withdrawal Address (Required for Batch Key Generation)"
                     variant="outlined"
                     value={props.withdrawalAddress}
                     onChange={updateEth1WithdrawAddress}
