@@ -1,5 +1,5 @@
 # Wagyu Key Gen
-Wagyu Key Gen is a GUI application providing functionality to the [eth2.0-deposit-cli](https://github.com/ethereum/eth2.0-deposit-cli). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
+Wagyu Key Gen is a GUI application providing functionality to the [Staking-deposit-cli-2.1.0](https://github.com/ethereum/staking-deposit-cli/releases/tag/v2.1.0). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
 
 ### Download wagyu at [https://wagyu.gg](https://wagyu.gg)
 
@@ -43,7 +43,7 @@ sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt install -y curl
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 
-sudo apt install -y python3.10-dev zlib1g-dev build-essential nodejs git
+sudo apt install -y python3.10-dev python3.10-distutils zlib1g-dev build-essential nodejs git
 
 PATH="$HOME/.local/bin:$PATH"
 
