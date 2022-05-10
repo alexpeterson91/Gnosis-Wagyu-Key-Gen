@@ -1,7 +1,7 @@
-"""The eth2deposit_proxy application.
+"""The staking-deposit_proxy application.
 
-This application is used as a proxy between our electron application and the eth2-deposit-cli
-internals. It exposes some eth2-deposit-cli functions as easy to use commands that can be called
+This application is used as a proxy between our electron application and the staking-deposit-cli
+internals. It exposes some staking-deposit-cli functions as easy to use commands that can be called
 on the CLI.
 """
 
@@ -34,7 +34,7 @@ from staking_deposit.settings import (
 )
 
 def validate_mnemonic(mnemonic: str, word_lists_path: str) -> str:
-    """Validate a mnemonic using the eth2-deposit-cli logic and returns the mnemonic.
+    """Validate a mnemonic using the staking-deposit-cli logic and returns the mnemonic.
 
     Keyword arguments:
     mnemonic -- the mnemonic to validate
@@ -71,7 +71,7 @@ def generate_keys(args):
             - network: network setting for the signing domain, possible values are 'mainnet',
                        'prater', 'kintsugi', 'kiln', or 'gnosis'
             - password: password that will protect the resulting keystore(s)
-            - eth1_withdrawal_address: (Optional) eth1 address that will be used to create the
+            - eth1_withdrawal_address: (Optional, unless generating multiple keys at once) eth address that will be used to create the
                                        withdrawal credentials
     """
     
@@ -79,7 +79,7 @@ def generate_keys(args):
     if args.eth1_withdrawal_address:
         eth1_withdrawal_address = args.eth1_withdrawal_address
         if not is_hex_address(eth1_withdrawal_address):
-            raise ValueError("The given Eth1 address is not in hexadecimal encoded form.")
+            raise ValueError("The given Eth address is not in hexadecimal encoded form.")
 
         eth1_withdrawal_address = to_normalized_address(eth1_withdrawal_address)
 
@@ -149,7 +149,7 @@ def main():
     generate_parser.add_argument("folder", help="Where to put the deposit data and keystore files", type=str)
     generate_parser.add_argument("network", help="For which network to create these keys for", type=str)
     generate_parser.add_argument("password", help="Password for the keystore files", type=str)
-    generate_parser.add_argument("--eth1_withdrawal_address", help="Optional eth1 withdrawal address; required for Gnosis", type=str)
+    generate_parser.add_argument("--eth1_withdrawal_address", help="Optional ETH withdrawal address; required for Gnosis Batch Key Generation", type=str)
     generate_parser.set_defaults(func=parse_generate_keys)
 
     validate_parser = subparsers.add_parser("validate_mnemonic")
