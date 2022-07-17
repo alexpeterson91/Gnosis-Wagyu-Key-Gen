@@ -191,9 +191,7 @@ const KeyConfigurationWizard: FC<Props> = (props): ReactElement => {
           setWithdrawalAddressFormatError={setWithdrawalAddressFormatError}
           passwordStrengthError={passwordStrengthError}
           startingIndexError={startingIndexError}
-          showAdvanced={props.showAdvanced}
-          setShowAdvanced={props.setShowAdvanced}
-          onFinish={validateInputs}
+         onFinish={validateInputs}
         />
       );
       case 1: return (
