@@ -18,8 +18,6 @@ type GenerateKeysProps = {
   numberOfKeysError: boolean,
   passwordStrengthError: boolean,
   startingIndexError: boolean,
-  showAdvanced: boolean,
-  setShowAdvanced: Dispatch<SetStateAction<boolean>>,
   onFinish: () => void
 }
 
@@ -42,14 +40,6 @@ const AddressTextField = styled(TextField)`
  */
 const KeyInputs = (props: GenerateKeysProps) => {
   
-  const handleToggleShowAdvanced = () => {
-    props.setShowAdvanced(props.showAdvanced);
-    if (!props.showAdvanced) {
-      props.setWithdrawalAddress("");
-      props.setWithdrawalAddressFormatError(false);
-    }
-  }
-
   const updateNumberOfKeys = (e: React.ChangeEvent<HTMLInputElement>) => {
     const num = parseInt(e.target.value);
     props.setNumberOfKeys(num);
@@ -129,7 +119,7 @@ const KeyInputs = (props: GenerateKeysProps) => {
                 <Tooltip title={tooltips.ETH1_WITHDRAW_ADDRESS}>
                   <AddressTextField
                     id="eth1-withdraw-address"
-                    label="ETH1 Withdrawal Address (Required for Batch Key Generation)"
+                    label="ETH Withdrawal Address (Required for Batch Key Generation)"
                     variant="outlined"
                     value={props.withdrawalAddress}
                     onChange={updateEth1WithdrawAddress}
