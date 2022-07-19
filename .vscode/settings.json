@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/vendors/staking-deposit-cli-2.1.0",
+        "./dist/packages"
+    ]
+}

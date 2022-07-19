@@ -23,9 +23,11 @@ GNOSIS = 'gnosis'
 #KintsugiSetting = BaseChainSetting(NETWORK_NAME=KINTSUGI, GENESIS_FORK_VERSION=bytes.fromhex('60000069'))
 # Merge Testnet (spec v1.1.9)
 #KilnSetting = BaseChainSetting(NETWORK_NAME=KILN, GENESIS_FORK_VERSION=bytes.fromhex('70000069'))
-
+# Gnosis Mainnet setting
+GnosisSetting = BaseChainSetting(NETWORK_NAME=GNOSIS, GENESIS_FORK_VERSION=bytes.fromhex('00000064'))
 
 ALL_CHAINS: Dict[str, BaseChainSetting] = {
+    GNOSIS: GnosisSetting
     #MAINNET: MainnetSetting,
     #PRATER: PraterSetting,
     #KINTSUGI: KintsugiSetting,
