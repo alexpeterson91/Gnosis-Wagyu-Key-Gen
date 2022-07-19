@@ -136,7 +136,7 @@ Run the following commands in the repository directory:
 
 - `yarn build`
   - `yarn build:watch` (will reload build on changes)
-  - _In order to get them to show in the app press `ctrl+r` or `cmd+r` once the app is started._
+  - *In order to get them to show in the app press `ctrl+r` or `cmd+r` once the app is started.*
 - `yarn start`
 
 ## To run diagnostics
