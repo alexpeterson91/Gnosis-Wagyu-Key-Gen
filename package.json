@@ -1,7 +1,7 @@
 {
     "name": "gnosis_wagyukeygen",
     "productName": "Gnosis Wagyu Key Gen",
-    "upstreamVersion": "1.3.0",
+    "upstreamVersion": "1.4.0",
     "version": "0.1.0",
     "description": "GUI key generation tool wrapping the staking deposit cli.",
     "main": "./build/electron/index.js",
