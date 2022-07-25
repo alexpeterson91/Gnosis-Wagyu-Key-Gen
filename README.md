@@ -1,14 +1,15 @@
-# Wagyu Key Gen
+# Gnosis Wagyu Key Gen
 
-Wagyu Key Gen is a GUI application providing functionality to the [Staking-deposit-cli-2.1.0](https://github.com/ethereum/staking-deposit-cli/releases/tag/v2.1.0). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
+The Gnosis Port of the Wagyu Key Gen is a GUI application providing functionality to the [Staking-deposit-cli-2.2.0](https://github.com/ethereum/staking-deposit-cli/releases/tag/v2.2.0). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
 
-## Download wagyu at [https://wagyu.gg](https://wagyu.gg)
+## Download Gnosis Wagyu Keygen at <Releases>
 
 ### Wagyu Audit by HashCloak [Wagyu Key Gen Audit Report](https://github.com/stake-house/wagyu-key-gen/files/7693548/Wagyu.Key.Gen.Audit.Report.pdf)
+  -This is an audit of the upstream software used as the basis for this port.
 
 ## Environment Configuration & Dependencies
 
-Prior to running Wagyu Key Gen a few dependencies need to be installed.
+Prior to running Gnosis Wagyu Key Gen a few dependencies need to be installed.
 
 ### Ubuntu 20.04 and later
 
@@ -48,7 +49,7 @@ sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt install -y curl
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 
-sudo apt install -y python3.10-dev python3.10-distutils lib1g-dev build-essential nodejs git
+sudo apt install -y python3.10-dev python3.10-distutils zlib1g-dev build-essential nodejs git
 
 PATH="$HOME/.local/bin:$PATH"
 
