@@ -29,7 +29,7 @@ pip3 install pyinstaller
 
 sudo npm install -g yarn
 
-git clone https://github.com/stake-house/wagyu-key-gen
+git clone https://github.com/alexpeterson91/wagyu-key-gen
 cd wagyu-key-gen
 
 yarn install
@@ -62,7 +62,7 @@ alias python3=python3.10
 echo -e "\nalias python3=python3.10" >> ~/.bash_aliases
 
 sudo corepack enable
-git clone https://github.com/stake-house/wagyu-key-gen
+git clone https://github.com/alexpeterson91/wagyu-key-gen
 cd wagyu-key-gen
 
 yarn install
@@ -93,7 +93,7 @@ set PATH=%APPDATA%\python\Python310\Scripts;%PATH%
 
 npm install -g yarn
 
-git clone https://github.com/stake-house/wagyu-key-gen
+git clone https://github.com/alexpeterson91/wagyu-key-gen
 cd wagyu-key-gen
 
 yarn install
@@ -102,7 +102,7 @@ yarn buildcliwin
 
 ### macOS 10.15.1 and later
 
-Execute all those commands in your terminal to setup your dev environment.  You may be prompted to install "command line developer tools" at some point and please do it.
+Execute all these commands in your terminal to setup your dev environment.  You may be prompted to install "command line developer tools" at some point and please do it.
 
 ```console
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -124,14 +124,14 @@ brew install node
 pip3 install pyinstaller
 npm install -g yarn
 
-git clone https://github.com/stake-house/wagyu-key-gen
+git clone https://github.com/alexpeterson91/wagyu-key-gen
 cd wagyu-key-gen
 
 yarn install
 yarn buildcli
 ```
 
-## Start Wagyu Key Gen
+## Start Gnosis Wagyu Key Gen
 
 Run the following commands in the repository directory:
 
@@ -142,11 +142,12 @@ Run the following commands in the repository directory:
 
 ## To run diagnostics
 
-To open dev tools when in Wagyu Key Gen use `Ctrl` + `Shift` + `I`
+To open dev tools when in Gnosis Wagyu Key Gen use `Ctrl` + `Shift` + `I`
 
 ## Bundling
 
-We use [electron-builder](https://www.electron.build/) to create executable bundles for Wagyu Key Gen.  Run the following to create a bundle:
+We use [electron-builder](https://www.electron.build/) to create executable bundles for Gnosis Wagyu Key Gen.  
+  Run the following to create a bundle:
 
 - `yarn run build`
 - `yarn run buildcli` (or `yarn run buildcliwin` on Windows)
@@ -154,13 +155,11 @@ We use [electron-builder](https://www.electron.build/) to create executable bund
 
 Your assets will be in the `dist/` folder.
 
-## Design
 
-Current designs: <https://www.figma.com/file/jcF78fVjndvM2hOPvifl0N/Wagyu-Key?node-id=1%3A4>
 
 ## Funding
 
-If you would like to help us with funding this project, you can donate with our [Gitcoin grant](https://gitcoin.co/grants/2112/stakehouse-wagyu-tooling-suite-easy-to-use-tools-) or you can send your funds directly to `wagyutools.eth`.
+If you would like to help with funding this project's source, you can donate to their [Gitcoin grant](https://gitcoin.co/grants/2112/stakehouse-wagyu-tooling-suite-easy-to-use-tools-) or you can send your funds directly to `wagyutools.eth`.
 
 ## Support
 
