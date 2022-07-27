@@ -116,7 +116,7 @@ const VerifyMnemonic: FC<VerifyMnemonicProps> = (props): ReactElement => {
       </Grid>
       <Grid item container xs={12}>
         <Grid item xs={1} />
-        { props.network != Network.MAINNET && (
+        { props.network != Network.GNOSIS && (
           <Grid item xs={10}>
             <TextField
               id="verify-mnemonic"
@@ -134,7 +134,7 @@ const VerifyMnemonic: FC<VerifyMnemonicProps> = (props): ReactElement => {
               onKeyDown={handleKeyDown} />
           </Grid>
         )}
-        { props.network == Network.MAINNET && (
+        { props.network == Network.GNOSIS && (
           createInputs()
         )}
         <Grid item xs={1} />
