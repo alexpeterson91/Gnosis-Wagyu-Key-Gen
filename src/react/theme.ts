@@ -1,5 +1,6 @@
 import { createTheme } from "@material-ui/core";
 import { green, blue } from "@material-ui/core/colors";
+import { GnosisGreen } from "./colors";
 
 
 

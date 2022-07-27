@@ -30,3 +30,6 @@ export const DisabledButton = DarkGray;
 
 export const Yellow = "#FFA600";
 export const Orange = "#F2994A";
+
+//   Gnosis Green Hex
+export const GnosisGreen = "#04795b"
