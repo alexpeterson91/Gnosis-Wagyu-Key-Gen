@@ -2,7 +2,7 @@
 
 The Gnosis Port of the Wagyu Key Gen is a GUI application providing functionality to the [Staking-deposit-cli-2.2.0](https://github.com/ethereum/staking-deposit-cli/releases/tag/v2.2.0). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
 
-## Download Gnosis Wagyu Keygen at <Releases>
+## Download Gnosis Wagyu Keygen at [Releases](https://github.com/alexpeterson91/wagyu-key-gen/releases)
 
 ### Wagyu Audit by HashCloak [Wagyu Key Gen Audit Report](https://github.com/stake-house/wagyu-key-gen/files/7693548/Wagyu.Key.Gen.Audit.Report.pdf)
   -This is an audit of the upstream software used as the basis for this port.
@@ -58,8 +58,6 @@ alias python3=python3.10
 echo -e "\nalias python3=python3.10" >> ~/.bash_aliases
 python3 get-pip.py
 pip3 install pyinstaller
-alias python3=python3.10
-echo -e "\nalias python3=python3.10" >> ~/.bash_aliases
 
 sudo corepack enable
 git clone https://github.com/alexpeterson91/wagyu-key-gen
