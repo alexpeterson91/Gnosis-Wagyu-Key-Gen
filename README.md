@@ -1,6 +1,6 @@
 # Gnosis Wagyu Key Gen
 
-The Gnosis Port of the Wagyu Key Gen is a GUI application providing functionality to the [Staking-deposit-cli-2.2.0](https://github.com/ethereum/staking-deposit-cli/releases/tag/v2.2.0). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
+The Gnosis Port of the Wagyu Key Gen is a GUI application providing functionality to the [Staking-deposit-cli-2.3.0](https://github.com/ethereum/staking-deposit-cli/releases/tag/v2.3.0). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
 
 ## Download Gnosis Wagyu Keygen at [Releases](https://github.com/alexpeterson91/wagyu-key-gen/releases)
 
@@ -159,13 +159,17 @@ Your assets will be in the `dist/` folder.
 
 If you would like to help with funding this project's source, you can donate to their [Gitcoin grant](https://gitcoin.co/grants/2112/stakehouse-wagyu-tooling-suite-easy-to-use-tools-) or you can send your funds directly to `wagyutools.eth`.
 
+Donations for this Gnosis Chain Port of Wagyu are accepted at `vnv.eth`.
+
 ## Support
 
-Reach out to the EthStaker community:
+Support for this project can currently be found on the [DAppNode Discord Sever](https://discord.gg/dappnode) In the Gnosis Beacon Chain channel.
+
+Reach out to the EthStaker community to get more generalized support for staking:
 
 - on [discord](https://discord.io/ethstaker)
 - on [reddit](https://www.reddit.com/r/ethstaker/)
 
 ## License
 
-[GPL](LICENSE)
+[GPL-3.0](LICENSE)
