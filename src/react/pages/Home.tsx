@@ -130,10 +130,9 @@ const Home: FC<HomeProps> = (props): ReactElement => {
       </Modal>
 
       <LandingHeader variant="h1"><b>Welcome to the Gnosis Wagyu Key Generator</b></LandingHeader> 
-      <LandingHeader variant="h1"><i>This Program is in Final Beta Testing</i></LandingHeader>
       <KeyIcon />
-      <SubHeader variant="h2">Your Key Generator for The Gnosis Beacon Chain</SubHeader>
-      <SubHeader variant="h2"><b>This Program is Still in Beta Testing; Please Use At Your Own Risk!</b></SubHeader>
+      <SubHeader variant="h2"><b>Your Key Generator for The Gnosis Beacon Chain</b></SubHeader>
+      <SubHeader variant="h2"><i>This Program is in Final Beta Testing; Please Use At Your Own Risk!</i></SubHeader>
 
       <Links>
         <InfoLabel>Github:</InfoLabel> https://github.com/alexpeterson91/wagyu-key-gen/issues
