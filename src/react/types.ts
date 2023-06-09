@@ -12,5 +12,6 @@ export enum StepSequenceKey {
 }
 
 export enum Network {
-  GNOSIS = "Gnosis"
+  GNOSIS = "Gnosis",
+  CHIADO = "Chiado"
 }
