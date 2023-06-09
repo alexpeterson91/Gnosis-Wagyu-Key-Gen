@@ -16,6 +16,7 @@ class BaseChainSetting(NamedTuple):
 #SEPOLIA = 'sepolia'
 #ROPSTEN = 'ropsten'
 GNOSIS = 'gnosis'
+CHIADO = 'chiado'
 
 # Mainnet setting
 #MainnetSetting = BaseChainSetting(NETWORK_NAME=MAINNET, GENESIS_FORK_VERSION=bytes.fromhex('00000000'))
@@ -29,9 +30,12 @@ GNOSIS = 'gnosis'
 #RopstenSetting = BaseChainSetting(NETWORK_NAME=ROPSTEN, GENESIS_FORK_VERSION=bytes.fromhex('80000069'))
 # Gnosis Mainnet setting
 GnosisSetting = BaseChainSetting(NETWORK_NAME=GNOSIS, GENESIS_FORK_VERSION=bytes.fromhex('00000064'))
+# Gnosis Chiado Testnet setting
+ChiadoSetting = BaseChainSetting(NETWORK_NAME=CHIADO, GENESIS_FORK_VERSION=bytes.fromhex('0000006f'))
 
 ALL_CHAINS: Dict[str, BaseChainSetting] = {
-    GNOSIS: GnosisSetting
+    GNOSIS: GnosisSetting,
+    CHIADO: ChiadoSetting
     #MAINNET: MainnetSetting,
     #PRATER: GoerliSetting,
     #SEPOLIA: SepoliaSetting,

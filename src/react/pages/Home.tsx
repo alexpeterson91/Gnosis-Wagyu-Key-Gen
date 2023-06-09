@@ -60,7 +60,7 @@ type HomeProps = {
  * @returns the react element to render
  */
 const Home: FC<HomeProps> = (props): ReactElement => {
-  const [showNetworkModal, setShowNetworkModal] = useState(false);
+  const [showNetworkModal, setShowNetworkModal] = useState(true);
   const [networkModalWasOpened, setNetworkModalWasOpened] = useState(true);
   const [createMnemonicSelected, setCreateMnemonicSelected] = useState(false);
   const [useExistingMnemonicSelected, setUseExistingMnemonicSelected] = useState(false);
