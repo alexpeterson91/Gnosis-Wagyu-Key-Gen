@@ -15,5 +15,3 @@ build/
 src/scripts/__pycache__/
 eth2deposit_proxy.spec
 .DS_Store
-
-REQUIREMENT_PACKAGES_PATH/

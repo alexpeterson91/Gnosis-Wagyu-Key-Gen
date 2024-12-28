@@ -1,0 +1,9 @@
+{
+    "check_python_version": {
+<<<<<<<< HEAD:src/vendors/staking-deposit-cli-2.3.0/staking_deposit/intl/ko/deposit.json
+        "err_python_version": "Python 버전이 너무 낮습니다. 3.8 이상 버전을 설치하세요."
+========
+        "err_python_version": "Python 버전이 너무 낮습니다. 3.9 이상 버전을 설치하세요."
+>>>>>>>> ethupstream/main:src/vendors/ethstaker-deposit-cli-0.6.0/ethstaker_deposit/intl/ko/deposit.json
+    }
+}

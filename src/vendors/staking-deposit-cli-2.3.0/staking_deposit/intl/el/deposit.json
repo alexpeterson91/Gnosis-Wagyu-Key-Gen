@@ -1,0 +1,9 @@
+{
+    "check_python_version": {
+<<<<<<<< HEAD:src/vendors/staking-deposit-cli-2.3.0/staking_deposit/intl/el/deposit.json
+        "err_python_version": "Η έκδοση python σας δεν είναι επαρκής, εγκαταστήστε την έκδοση 3.8 ή μεγαλύτερη."
+========
+        "err_python_version": "Η έκδοση python σας δεν είναι επαρκής, εγκαταστήστε την έκδοση 3.9 ή μεγαλύτερη."
+>>>>>>>> ethupstream/main:src/vendors/ethstaker-deposit-cli-0.6.0/ethstaker_deposit/intl/el/deposit.json
+    }
+}
