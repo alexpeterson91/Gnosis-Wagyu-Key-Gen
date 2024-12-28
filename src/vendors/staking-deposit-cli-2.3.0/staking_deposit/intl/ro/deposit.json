@@ -1,9 +1,0 @@
-{
-    "check_python_version": {
-<<<<<<<< HEAD:src/vendors/staking-deposit-cli-2.3.0/staking_deposit/intl/ro/deposit.json
-        "err_python_version": "Versiunea de python este prea veche, te rugăm să instalezi versiunea 3.8 sau una mai recentă."
-========
-        "err_python_version": "Versiunea de python este prea veche, te rugăm să instalezi versiunea 3.9 sau una mai recentă."
->>>>>>>> ethupstream/main:src/vendors/ethstaker-deposit-cli-0.6.0/ethstaker_deposit/intl/ro/deposit.json
-    }
-}
