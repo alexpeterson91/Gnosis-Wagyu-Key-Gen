@@ -1,9 +1,0 @@
-{
-    "check_python_version": {
-<<<<<<<< HEAD:src/vendors/staking-deposit-cli-2.3.0/staking_deposit/intl/fr/deposit.json
-        "err_python_version": "Votre version de Python est insuffisante. Veuillez installer la version 3.8 ou supérieure."
-========
-        "err_python_version": "Votre version de Python est insuffisante. Veuillez installer la version 3.9 ou supérieure."
->>>>>>>> ethupstream/main:src/vendors/ethstaker-deposit-cli-0.6.0/ethstaker_deposit/intl/fr/deposit.json
-    }
-}

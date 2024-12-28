@@ -1,9 +1,0 @@
-{
-    "check_python_version": {
-<<<<<<<< HEAD:src/vendors/staking-deposit-cli-2.3.0/staking_deposit/intl/id/deposit.json
-        "err_python_version": "Versi python Anda tidak cukup, harap instal versi 3.8 atau yang lebih baru."
-========
-        "err_python_version": "Versi python Anda tidak cukup, harap instal versi 3.9 atau yang lebih baru."
->>>>>>>> ethupstream/main:src/vendors/ethstaker-deposit-cli-0.6.0/ethstaker_deposit/intl/id/deposit.json
-    }
-}

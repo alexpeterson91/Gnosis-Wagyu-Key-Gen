@@ -1,6 +1,0 @@
-# common requirements.in
-cffi
-importlib-metadata
-macholib
-pyinstaller
-setuptools
