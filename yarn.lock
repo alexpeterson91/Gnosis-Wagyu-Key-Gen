@@ -1079,12 +1079,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.9":
-  version: 17.0.26
-  resolution: "@types/react-dom@npm:17.0.26"
-  peerDependencies:
-    "@types/react": ^17.0.0
-  checksum: 10/86be1faf019b58f2b470a037c291c9c9efa5cf8b3927bfec436d83b12dd7a6a0369554c567c4ca8b59e1ee341b835c1b272cd0340628cbbea75ec43168858e5b
+"@types/react-dom@npm:17.0.14":
+  version: 17.0.14
+  resolution: "@types/react-dom@npm:17.0.14"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10/c93e60dbe5663f527873ce7742b223c83fca0c5cd6293654a9efa34c8f5da508a57548e06b77d0460bc8dfd4fce12afef10040a44c60beaf773a627e77bca9eb
   languageName: node
   linkType: hard
 
@@ -1118,23 +1118,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
-  version: 19.0.2
-  resolution: "@types/react@npm:19.0.2"
-  dependencies:
-    csstype: "npm:^3.0.2"
-  checksum: 10/b355cfa22814e934b381c4f6de67c66652255377c3ddc6a757ea195ccbd0e7095aadfe1a28713d8ab1221222b8f2ec237903f4ec0e54eaf656ac832782d25dd2
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^17.0.14":
-  version: 17.0.83
-  resolution: "@types/react@npm:17.0.83"
+"@types/react@npm:17.0.14":
+  version: 17.0.14
+  resolution: "@types/react@npm:17.0.14"
   dependencies:
     "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:^0.16"
+    "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10/0abf5c8ccf8ee03e28ff7cd077e7759f4a65c4694a23f6a2b6574e2ea2a3a8e7f6d6a5802e847454091a006d4b4ebc8a485ada74fbfc3cf19c7221171b1538ab
+  checksum: 10/49a3dff370a2b70f5fd6f304227411ee899fe8a05936306318774a7713b6e6758e61efcfeab9cec97f379ed4a3cf01d6d53e241e9a4a6cff1c4404a22319ed4c
   languageName: node
   linkType: hard
 
@@ -1147,10 +1138,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/scheduler@npm:^0.16":
-  version: 0.16.8
-  resolution: "@types/scheduler@npm:0.16.8"
-  checksum: 10/6c091b096daa490093bf30dd7947cd28e5b2cd612ec93448432b33f724b162587fed9309a0acc104d97b69b1d49a0f3fc755a62282054d62975d53d7fd13472d
+"@types/scheduler@npm:*":
+  version: 0.23.0
+  resolution: "@types/scheduler@npm:0.23.0"
+  checksum: 10/874d753aa65c17760dfc460a91e6df24009bde37bfd427a031577b30262f7770c1b8f71a21366c7dbc76111967384cf4090a31d65315155180ef14bd7acccb32
   languageName: node
   linkType: hard
 

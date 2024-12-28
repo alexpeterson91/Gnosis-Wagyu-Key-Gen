@@ -28,6 +28,10 @@
         "webpack": "^5.88.2",
         "webpack-cli": "^4.9.1"
     },
+    "resolutions": {
+        "@types/react": "17.0.14",
+        "@types/react-dom": "17.0.14"
+    },
     "scripts": {
         "build": "webpack --config webpack.react.config.js --config webpack.electron.config.js",
         "build:watch": "webpack --config webpack.react.config.js --config webpack.electron.config.js --watch",
