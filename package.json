@@ -1,28 +1,36 @@
 {
     "name": "gnosis_wagyukeygen",
     "productName": "Gnosis Wagyu Key Gen",
-    "upstreamVersion": "1.5.0",
-    "version": "0.1.1",
+    "upstreamVersion": "1.11.0",
+    "version": "0.2.0",
     "description": "GUI key generation tool wrapping the staking deposit cli.",
     "main": "./build/electron/index.js",
     "author": "Colfax Selby <colfax.selby@gmail.com>",
     "contributors": [
-        "Voss <alex@visnovaventures.com>"
+        "Voss <alex@visnovaventures.com>",
+        "Natalino Picone <nat@chainlabo.com>"
     ],
     "license": "GPL-3.0",
     "devDependencies": {
-        "@types/node": "^17.0.31",
         "@types/react": "^17.0.14",
         "@types/react-dom": "^17.0.9",
         "@types/react-router-dom": "^5.1.8",
         "@types/styled-components": "^5.1.11",
         "@types/tmp": "^0.2.2",
-        "electron": "^18.3.7",
-        "electron-builder": "^23.0.3",
+        "autoprefixer": "^10.4.19",
+        "electron": "^28.2.2",
+        "electron-builder": "^24.9.1",
+        "postcss": "^8.4.38",
+        "postcss-loader": "^8.1.1",
+        "tailwindcss": "^3.4.1",
         "ts-loader": "^9.2.3",
         "typescript": "^4.3.5",
-        "webpack": "^5.64.3",
+        "webpack": "^5.88.2",
         "webpack-cli": "^4.9.1"
+    },
+    "resolutions": {
+        "@types/react": "17.0.14",
+        "@types/react-dom": "17.0.14"
     },
     "scripts": {
         "build": "webpack --config webpack.react.config.js --config webpack.electron.config.js",
@@ -31,25 +39,29 @@
         "buildcliwin": "src/scripts/bundle_proxy_win.bat",
         "start": "electron ./build/electron/index.js",
         "pack": "electron-builder --dir",
-        "dist": "electron-builder"
+        "dist": "electron-builder -p never"
     },
     "dependencies": {
-        "@material-ui/core": "^4.12.3",
-        "@material-ui/icons": "^4.11.2",
-        "@material-ui/lab": "^4.0.0-alpha.60",
+        "@emotion/react": "^11.11.3",
+        "@emotion/styled": "^11.11.0",
+        "@mui/icons-material": "^5.15.10",
+        "@mui/lab": "^5.0.0-alpha.165",
+        "@mui/material": "^5.15.10",
+        "@mui/styled-engine-sc": "^6.0.0-alpha.16",
+        "@mui/styles": "^5.15.10",
         "css-loader": "^5.2.6",
         "file-loader": "^6.2.0",
         "git-revision-webpack-plugin": "^5.0.0",
         "html-webpack-plugin": "^5.5.0",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
-        "react-is": "^18.1.0",
         "react-router-dom": "^5.2.0",
         "shebang-loader": "^0.0.1",
         "style-loader": "^3.0.0",
-        "styled-components": "^5.3.0",
+        "styled-components": "^6.1.8",
         "typeface-roboto": "^1.1.13",
-        "web3-utils": "^1.7.0"
+        "web3-utils": "^1.7.0",
+        "yarn": "^1.22.22"
     },
     "build": {
         "appId": "gg.wagyu.keygen",
@@ -74,5 +86,6 @@
             "target": "portable",
             "icon": "static/icon.ico"
         }
-    }
+    },
+    "packageManager": "yarn@4.1.0"
 }

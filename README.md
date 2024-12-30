@@ -1,6 +1,7 @@
 # Gnosis Wagyu Key Gen
 
-The Gnosis Port of the Wagyu Key Gen is a GUI application providing functionality to the [Staking-deposit-cli-2.3.0](https://github.com/ethereum/staking-deposit-cli/releases/tag/v2.3.0). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
+The Gnosis Port of the Wagyu Key Gen is a GUI application providing functionality to the [ethstaker-deposit-cli](https://github.com/eth-educators/ethstaker-deposit-cli). It is a React app running in Electron.  See `src/electron/` for the simple electron app and `src/react/` for where the magic happens.
+
 
 ## Download Gnosis Wagyu Keygen at [Releases](https://github.com/alexpeterson91/wagyu-key-gen/releases)
 
@@ -60,7 +61,7 @@ python3 get-pip.py
 pip3 install pyinstaller
 
 sudo corepack enable
-git clone https://github.com/alexpeterson91/wagyu-key-gen
+git clone https://github.com/ChainLabo/Gnosis-Wagyu-Key-Gen
 cd wagyu-key-gen
 
 yarn install
@@ -104,7 +105,7 @@ Execute all these commands in your terminal to setup your dev environment.  You 
 
 ```console
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/wagyu/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$USER/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 git --version
@@ -162,13 +163,9 @@ If you would like to help with funding this project's source, you can donate to 
 Donations for this Gnosis Chain Port of Wagyu are accepted at `vnv.eth`.
 
 ## Support
-
-Support for this project can currently be found on the [DAppNode Discord Sever](https://discord.gg/dappnode) In the Gnosis Beacon Chain channel.
-
-Reach out to the EthStaker community to get more generalized support for staking:
-
-- on [discord](https://discord.io/ethstaker)
-- on [reddit](https://www.reddit.com/r/ethstaker/)
+Reach out to the EthStaker community:
+ - on [discord](https://dsc.gg/ethstaker)
+ - on [reddit](https://www.reddit.com/r/ethstaker/)
 
 ## License
 

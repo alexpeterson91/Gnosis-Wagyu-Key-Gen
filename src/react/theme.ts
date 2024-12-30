@@ -1,22 +1,22 @@
-import { createTheme } from "@material-ui/core";
-import { green, blue } from "@material-ui/core/colors";
-import { GnosisGreen } from "./colors";
-
-
+import { createTheme} from "@mui/material";
+import { green, blue } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
-    type: "dark",
+    mode: "dark",
     primary: green,
     secondary: blue,
+    background: {
+      default: "#303030",
+    },
   },
   typography: {
     h1: {
-      fontSize: "36px",
+      fontSize: "2.25rem",
       justifyContent: "Center"
     },
     h2: {
-      fontSize: "20px",
+      fontSize: "1.75rem",
       justifyContent: "Center"
     }
   }
