@@ -24,9 +24,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
 
 contextBridge.exposeInMainWorld('eth2Deposit', {
   'createMnemonic': (...args: Parameters<IEth2DepositAPI['createMnemonic']>) => ipcRenderer.invoke('createMnemonic', ...args),
-  'generateBLSChange': (...args: Parameters<IEth2DepositAPI['generateBLSChange']>) => ipcRenderer.invoke('generateBLSChange', ...args),
   'generateKeys': (...args: Parameters<IEth2DepositAPI['generateKeys']>) => ipcRenderer.invoke('generateKeys', ...args),
-  'validateBLSCredentials': (...args: Parameters<IEth2DepositAPI['validateBLSCredentials']>) => ipcRenderer.invoke('validateBLSCredentials', ...args),
   'validateMnemonic': (...args: Parameters<IEth2DepositAPI['validateMnemonic']>) => ipcRenderer.invoke('validateMnemonic', ...args),
 });
 

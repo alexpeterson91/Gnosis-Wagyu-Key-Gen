@@ -60,7 +60,8 @@
         "style-loader": "^3.0.0",
         "styled-components": "^6.1.8",
         "typeface-roboto": "^1.1.13",
-        "web3-utils": "^1.7.0"
+        "web3-utils": "^1.7.0",
+        "yarn": "^1.22.22"
     },
     "build": {
         "appId": "gg.wagyu.keygen",

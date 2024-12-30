@@ -51,23 +51,8 @@ const CreateCredentialsChange = () => {
     if (withdrawalAddress != "" && !withdrawalAddress.toLowerCase().startsWith("0x")) {
       appendedWithdrawalAddress = "0x" + withdrawalAddress;
     }
-
-    window.eth2Deposit.generateBLSChange(
-      selectedFolder,
-      network,
-      mnemonic,
-      index,
-      btecIndices,
-      btecCredentials,
-      appendedWithdrawalAddress,
-    ).then(() => {
-      setFolderLocation(selectedFolder);
-      history.push(paths.FINISH_CREDENTIALS);
-    }).catch((error) => {
-      const errorMsg = ('stderr' in error) ? error.stderr : error.message;
-      setGenerationError(errorMsg);
-      setCreatingCredentialsChange(false);
-    });
+    setFolderLocation(selectedFolder);
+    history.push(paths.FINISH_CREDENTIALS);
   }
 
   const onBackClick = () => {

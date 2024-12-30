@@ -23,9 +23,7 @@ import {
 } from './BashUtils';
 import {
   createMnemonic,
-  generateBLSChange,
   generateKeys,
-  validateBLSCredentials,
   validateMnemonic,
 } from './Eth2Deposit';
 
@@ -117,14 +115,8 @@ app.on("ready", () => {
   ipcMain.handle('createMnemonic', async (event, ...args: Parameters<typeof createMnemonic>) => {
     return await createMnemonic(...args);
   });
-  ipcMain.handle('generateBLSChange', async (event, ...args: Parameters<typeof generateBLSChange>) => {
-    return await generateBLSChange(...args);
-  });
   ipcMain.handle('generateKeys', async (event, ...args: Parameters<typeof generateKeys>) => {
     return await generateKeys(...args);
-  });
-  ipcMain.handle('validateBLSCredentials', async (event, ...args: Parameters<typeof validateBLSCredentials>) => {
-    return await validateBLSCredentials(...args);
   });
   ipcMain.handle('validateMnemonic', async (event, ...args: Parameters<typeof validateMnemonic>) => {
     return await validateMnemonic(...args);

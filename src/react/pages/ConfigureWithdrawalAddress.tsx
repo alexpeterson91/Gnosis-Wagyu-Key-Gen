@@ -146,17 +146,12 @@ const ConfigureWithdrawalAddress = () => {
     if (!isError) {
       setValidatingCredentials(true);
 
-      window.eth2Deposit.validateBLSCredentials(network, mnemonic, inputIndex, inputCredentials).then(() => {
-        setBTECCredentials(inputCredentials);
-        setBTECIndices(inputIndices);
-        setIndex(inputIndex);
-        setWithdrawalAddress(inputWithdrawalAddress);
+      setBTECCredentials(inputCredentials);
+      setBTECIndices(inputIndices);
+      setIndex(inputIndex);
+      setWithdrawalAddress(inputWithdrawalAddress);
 
-        history.push(paths.CREATE_CREDENTIALS);
-      }).catch(() => {
-        setValidatingCredentials(false);
-        setCredentialsError(errors.BLS_CREDENTIALS_NO_MATCH);
-      })
+      history.push(paths.CREATE_CREDENTIALS);
     }
   };
 
